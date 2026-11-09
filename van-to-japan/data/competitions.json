@@ -1,0 +1,42 @@
+[
+  {
+    "id": "fishing-van-draw",
+    "sample": true,
+    "chapter": 1,
+    "status": "drawn",
+    "title": "The Fishing Van",
+    "blurb": "Sample competition (drawn).",
+    "details": ["Sample prize detail line", "Sample prize detail line"],
+    "image": null,
+    "imageAlt": "The fishing van",
+    "gallery": [],
+    "price": 2.5,
+    "totalTickets": 1500,
+    "sold": 1500,
+    "maxPerPerson": 50,
+    "drawAt": "2026-10-15T19:00:00Z",
+    "cashAlternative": 1000,
+    "winner": "w1",
+    "skillQuestion": { "q": "Which of these is a type of fish?", "options": ["Haddock", "Hammock", "Hackney"] }
+  },
+  {
+    "id": "chapter-2-draw",
+    "sample": true,
+    "chapter": 2,
+    "status": "live",
+    "title": "The Next Van",
+    "blurb": "Sample competition (live). Win the next van on the road to Japan.",
+    "details": ["Sample prize detail line", "Sample prize detail line", "Sample prize detail line"],
+    "image": null,
+    "imageAlt": "The next van",
+    "gallery": [],
+    "price": 3,
+    "totalTickets": 3000,
+    "sold": 412,
+    "maxPerPerson": 50,
+    "drawAt": "2026-12-01T19:00:00Z",
+    "cashAlternative": 2000,
+    "winner": null,
+    "skillQuestion": { "q": "Which of these is a type of fish?", "options": ["Mackerel", "Maverick", "Marigold"] }
+  }
+]

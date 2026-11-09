@@ -1,0 +1,41 @@
+[
+  {
+    "chapter": 1,
+    "sample": true,
+    "title": "The Fishing Van",
+    "status": "completed",
+    "item": "Ex-fishing transit van (sample)",
+    "dateStarted": "2026-09-01",
+    "dateEnded": "2026-10-15",
+    "valueIn": 1500,
+    "valueOut": 3200,
+    "location": "Brixham, Devon",
+    "summary": "Sample chapter. The very first step: a salty old fishing van, bought for next to nothing and raffled to fund the next move. Replace this with the real two or three sentences.",
+    "hero": null,
+    "heroAlt": "The fishing van parked by the harbour at golden hour",
+    "gallery": [],
+    "videos": [],
+    "competition": "fishing-van-draw",
+    "winner": "w1"
+  },
+  {
+    "chapter": 2,
+    "sample": true,
+    "title": "The Next Van",
+    "status": "current",
+    "item": "Next vehicle (sample)",
+    "dateStarted": "2026-10-15",
+    "dateEnded": null,
+    "valueIn": 3200,
+    "valueNow": 3200,
+    "valueOut": null,
+    "location": "Bristol",
+    "summary": "Sample chapter. The proceeds from chapter one become a better van. This is the live step: the competition is open and the clock is running.",
+    "hero": null,
+    "heroAlt": "The current van on the road",
+    "gallery": [],
+    "videos": [],
+    "competition": "chapter-2-draw",
+    "winner": null
+  }
+]

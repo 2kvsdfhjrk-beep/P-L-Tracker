@@ -1,0 +1,33 @@
+{
+  "name": "Van to Japan",
+  "workingTitle": true,
+  "tagline": "Started with a fishing van. Ending with a house in Japan.",
+  "storySoFar": "Sample copy: one fishing van, one big idea. Each step is traded, raffled or upgraded in public, and every chapter below is a real stop on the way to a house in Japan.",
+  "about": "Sample copy: who is behind the journey, why a fishing van, and why Japan. Replace this with the real story.",
+  "target": {
+    "value": 150000,
+    "label": "A house in Japan",
+    "note": "Placeholder estimate. Replace with the real target cost."
+  },
+  "draw": { "platform": "Live draw (platform to be confirmed)" },
+  "freeEntry": {
+    "address": "[Postal address for free entry to be confirmed]",
+    "instructions": "[Free entry instructions to be confirmed. State how to enter, what to include, the closing date rule and that free entries have exactly the same chance as paid ones.]"
+  },
+  "socials": [
+    { "label": "TikTok", "url": "#" },
+    { "label": "Instagram", "url": "#" },
+    { "label": "YouTube", "url": "#" }
+  ],
+  "howSteps": [
+    { "title": "Pick a prize", "text": "Each competition is one step of the journey: a van, a vehicle or an item we're trading towards the house in Japan." },
+    { "title": "Answer and enter", "text": "Answer the skill question, choose your tickets (there's a cap per person) and check out. Or enter free by post." },
+    { "title": "Watch the live draw", "text": "Every draw is live. The winner gets the prize, or a cash alternative if you'd rather, and the journey moves to the next chapter." }
+  ],
+  "faq": [
+    { "q": "Is there a free way to enter?", "a": "Yes. Every competition has a free postal entry route with exactly the same chance of winning. See the free entry page for the address and rules." },
+    { "q": "What are the odds?", "a": "Shown on every competition page above the buy button: the maximum tickets per person and the odds if every ticket is sold." },
+    { "q": "How is the winner picked?", "a": "[To be confirmed: describe the draw method and the live draw platform.]" },
+    { "q": "Can I take cash instead of the prize?", "a": "Where a cash alternative applies, it's shown on the competition page." }
+  ]
+}
