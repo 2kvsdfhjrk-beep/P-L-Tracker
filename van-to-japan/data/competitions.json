@@ -6,7 +6,10 @@
     "status": "drawn",
     "title": "The Fishing Van",
     "blurb": "Sample competition (drawn).",
-    "details": ["Sample prize detail line", "Sample prize detail line"],
+    "details": [
+      "Sample prize detail line",
+      "Sample prize detail line"
+    ],
     "image": null,
     "imageAlt": "The fishing van",
     "gallery": [],
@@ -17,26 +20,74 @@
     "drawAt": "2026-10-15T19:00:00Z",
     "cashAlternative": 1000,
     "winner": "w1",
-    "skillQuestion": { "q": "Which of these is a type of fish?", "options": ["Haddock", "Hammock", "Hackney"] }
+    "skillQuestion": {
+      "q": "Which of these is a type of fish?",
+      "options": [
+        "Haddock",
+        "Hammock",
+        "Hackney"
+      ]
+    }
   },
   {
-    "id": "chapter-2-draw",
+    "id": "camper-draw",
     "sample": true,
     "chapter": 2,
-    "status": "live",
-    "title": "The Next Van",
-    "blurb": "Sample competition (live). Win the next van on the road to Japan.",
-    "details": ["Sample prize detail line", "Sample prize detail line", "Sample prize detail line"],
+    "status": "drawn",
+    "title": "The Camper",
+    "blurb": "Sample competition (drawn).",
+    "details": [
+      "Sample prize detail line",
+      "Sample prize detail line"
+    ],
     "image": null,
-    "imageAlt": "The next van",
+    "imageAlt": "The camper van",
     "gallery": [],
     "price": 3,
     "totalTickets": 3000,
+    "sold": 3000,
+    "maxPerPerson": 50,
+    "drawAt": "2026-11-02T19:00:00Z",
+    "cashAlternative": 2000,
+    "winner": "w2",
+    "skillQuestion": {
+      "q": "Which of these is a type of fish?",
+      "options": [
+        "Mackerel",
+        "Maverick",
+        "Marigold"
+      ]
+    }
+  },
+  {
+    "id": "four-by-four-draw",
+    "sample": true,
+    "chapter": 3,
+    "status": "live",
+    "title": "The 4x4",
+    "blurb": "Sample competition (live). Win the 4x4 that's carrying the journey right now.",
+    "details": [
+      "Sample prize detail line",
+      "Sample prize detail line",
+      "Sample prize detail line"
+    ],
+    "image": null,
+    "imageAlt": "The 4x4",
+    "gallery": [],
+    "price": 3,
+    "totalTickets": 5000,
     "sold": 412,
     "maxPerPerson": 50,
-    "drawAt": "2026-12-01T19:00:00Z",
-    "cashAlternative": 2000,
+    "drawAt": "2026-12-12T19:00:00Z",
+    "cashAlternative": 5000,
     "winner": null,
-    "skillQuestion": { "q": "Which of these is a type of fish?", "options": ["Mackerel", "Maverick", "Marigold"] }
+    "skillQuestion": {
+      "q": "Which of these is a type of fish?",
+      "options": [
+        "Mackerel",
+        "Maverick",
+        "Marigold"
+      ]
+    }
   }
 ]

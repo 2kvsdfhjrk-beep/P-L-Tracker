@@ -1,4 +1,6 @@
-/* Design tokens: "Tide to Torii" */
+/* Design tokens: "Tide to Torii"
+   Layout concept: the page is one voyage. A harbour scene opens it, a dashed route runs
+   down through the chapters, and it lands at a torii and a house that fills like a tide gauge. */
 :root {
   /* Brand palette (from the design brief) */
   --colour-ink: #13283A;      /* Deep Sea */
@@ -10,31 +12,68 @@
   --colour-mist: #E6E9E8;     /* Mist */
 
   /* Derived tints, added so text pairs meet WCAG AA */
-  --colour-torii-dark: #A93423;   /* button hover */
-  --colour-tide-text: #3B6076;    /* Tide, darkened for text/links on Washi */
-  --colour-hanko: #A8372A;        /* stamp red, kept distinct from the action red */
-  --colour-ink-soft: #46586A;     /* secondary text on Washi */
-  --colour-night: #0E1E2D;        /* header/footer in dark mode */
+  --colour-torii-dark: #A93423;
+  --colour-tide-text: #3B6076;
+  --colour-hanko: #A8372A;
+  --colour-ink-soft: #46586A;
+  --colour-night: #0B1826;
 
-  /* Semantic tokens (light) */
-  --bg: var(--colour-paper);
-  --text: var(--colour-ink);
-  --muted: var(--colour-ink-soft);
+  /* Semantic tokens (light: "Day") */
+  --bg: #F5F0E6;
+  --text: #13283A;
+  --muted: #46586A;
   --surface: #FBF8F1;
   --panel: #E8DEC7;
-  --line: var(--colour-sand);
-  --link: var(--colour-tide-text);
-  --good: var(--colour-kelp);
-  --stamp: var(--colour-hanko);
-  --bar-bg: var(--colour-mist);
-  --chrome: var(--colour-ink);   /* header, footer, dark sections */
-  --chrome-text: var(--colour-paper);
-  --focus: var(--colour-tide-text);
+  --line: #D9C9A8;
+  --link: #3B6076;
+  --good: #3F5B4A;
+  --stamp: #A8372A;
+  --bar-bg: #E6E9E8;
+  --chrome: #13283A;
+  --chrome-text: #F5F0E6;
+  --focus: #3B6076;
+  --fog: rgba(110, 143, 163, .28);
+  --odo-bg: #13283A;
+  --odo-fg: #F5F0E6;
+
+  /* Scene tokens (hero illustration) */
+  --sky-1: #F5F0E6;
+  --sky-2: #F2E4CB;
+  --sky-3: #EDC7A2;
+  --sun: #E07355;
+  --sun-glow: rgba(224, 115, 85, .32);
+  --sea-1: #B4C8D2;
+  --sea-2: #7E9EB1;
+  --sea-3: #456B82;
+  --far: #9DB3BF;
+  --far-2: #5F7F92;
+  --quay: #13283A;
+  --quay-edge: #2F506B;
+  --lamp: #F3D58A;
+  --lh-body: #FBF8F1;
+  --stars: 0;
+  --gulls: visible;
+  --beam: 0;
+  --van-body: #F5F0E6;
+  --van-band: #3F5B4A;
+  --van-glass: #2F506B;
+  --van-wheel: #0B1826;
+  --van-line: #13283A;
+  --van-lamp: #F3D58A;
+
+  /* Destination band: always night, in both themes */
+  --dest-bg: #0B1826;
+  --dest-text: #F5F0E6;
+  --dest-muted: #AEBBC4;
+  --dest-sun: #E07355;
+  --dest-tide: #6E8FA3;
+  --dest-line: #D9C9A8;
 
   /* Type */
   --font-display: 'Barlow Condensed', 'Archivo Narrow', 'Arial Narrow', Impact, sans-serif;
   --font-body: 'Fraunces', 'Source Serif 4', Georgia, 'Times New Roman', serif;
   --font-mono: 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --font-jp: 'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif JP', 'Noto Serif CJK JP', serif;
 
   /* Spacing, radius, shadow */
   --space-1: .25rem;
@@ -43,49 +82,49 @@
   --space-4: 1rem;
   --space-5: 1.5rem;
   --space-6: 2rem;
-  --space-7: 3rem;
-  --space-8: 4.5rem;
+  --space-7: 3.5rem;
+  --space-8: 5.5rem;
   --radius: 10px;
   --radius-sm: 6px;
-  --shadow-1: 0 1px 2px rgba(19, 40, 58, .12), 0 2px 8px rgba(19, 40, 58, .08);
-  --shadow-2: 0 4px 18px rgba(19, 40, 58, .18);
-  --measure: 66ch;
+  --shadow-1: 0 1px 2px rgba(19, 40, 58, .12), 0 3px 10px rgba(19, 40, 58, .08);
+  --shadow-2: 0 10px 30px rgba(19, 40, 58, .2);
+  --measure: 62ch;
   --wrap: 72rem;
-  --ease: 180ms ease-out;
+  --ease: 200ms cubic-bezier(.2, .7, .2, 1);
 }
 
 /* Dark mode: "Night Fishing" */
-:root[data-theme="dark"] {
-  --bg: var(--colour-ink);
-  --text: var(--colour-paper);
-  --muted: #B7C2C9;
-  --surface: #1A3349;
-  --panel: #21405A;
-  --line: #3A566F;
-  --link: #9CC0D4;
-  --good: #9FC2AC;
-  --stamp: #E8826F;
-  --bar-bg: #2C4861;
-  --chrome: var(--colour-night);
-  --focus: #9CC0D4;
-  --shadow-1: 0 1px 2px rgba(0, 0, 0, .4);
-  --shadow-2: 0 4px 18px rgba(0, 0, 0, .5);
-}
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: var(--colour-ink);
-    --text: var(--colour-paper);
-    --muted: #B7C2C9;
-    --surface: #1A3349;
-    --panel: #21405A;
-    --line: #3A566F;
-    --link: #9CC0D4;
-    --good: #9FC2AC;
-    --stamp: #E8826F;
-    --bar-bg: #2C4861;
-    --chrome: var(--colour-night);
-    --focus: #9CC0D4;
-    --shadow-1: 0 1px 2px rgba(0, 0, 0, .4);
-    --shadow-2: 0 4px 18px rgba(0, 0, 0, .5);
+    color-scheme: dark;
+    --bg: #13283A; --text: #F5F0E6; --muted: #B7C2C9; --surface: #1A3349; --panel: #1D3A52;
+    --line: #3A566F; --link: #9CC0D4; --good: #9FC2AC; --stamp: #E8826F; --bar-bg: #2C4861;
+    --chrome: #0B1826; --focus: #9CC0D4; --fog: rgba(156, 192, 212, .16);
+    --odo-bg: #0B1826; --odo-fg: #F5F0E6;
+    --sky-1: #081421; --sky-2: #0E2236; --sky-3: #1B3B55;
+    --sun: #EFE7D3; --sun-glow: rgba(239, 231, 211, .22);
+    --sea-1: #21455F; --sea-2: #19364D; --sea-3: #122B40;
+    --far: #2A4C66; --far-2: #47708F;
+    --quay: #040B12; --quay-edge: #17324A; --lamp: #FFE08A; --lh-body: #C9C4B6;
+    --stars: 1; --beam: .5; --gulls: hidden;
+    --van-body: #D9D3C5; --van-band: #2F4739;
+    --shadow-1: 0 1px 2px rgba(0, 0, 0, .4), 0 3px 10px rgba(0, 0, 0, .25);
+    --shadow-2: 0 10px 30px rgba(0, 0, 0, .5);
   }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #13283A; --text: #F5F0E6; --muted: #B7C2C9; --surface: #1A3349; --panel: #1D3A52;
+  --line: #3A566F; --link: #9CC0D4; --good: #9FC2AC; --stamp: #E8826F; --bar-bg: #2C4861;
+  --chrome: #0B1826; --focus: #9CC0D4; --fog: rgba(156, 192, 212, .16);
+  --odo-bg: #0B1826; --odo-fg: #F5F0E6;
+  --sky-1: #081421; --sky-2: #0E2236; --sky-3: #1B3B55;
+  --sun: #EFE7D3; --sun-glow: rgba(239, 231, 211, .22);
+  --sea-1: #21455F; --sea-2: #19364D; --sea-3: #122B40;
+  --far: #2A4C66; --far-2: #47708F;
+  --quay: #040B12; --quay-edge: #17324A; --lamp: #FFE08A; --lh-body: #C9C4B6;
+  --stars: 1; --beam: .5; --gulls: hidden;
+  --van-body: #D9D3C5; --van-band: #2F4739;
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, .4), 0 3px 10px rgba(0, 0, 0, .25);
+  --shadow-2: 0 10px 30px rgba(0, 0, 0, .5);
 }

@@ -10,5 +10,17 @@
     "photo": null,
     "photoAlt": "Handover of the fishing van keys",
     "video": null
+  },
+  {
+    "id": "w2",
+    "sample": true,
+    "name": "Sample K.",
+    "area": "Somerset",
+    "prize": "The Camper",
+    "date": "2026-11-02",
+    "competition": "camper-draw",
+    "photo": null,
+    "photoAlt": "Handover of the camper keys",
+    "video": null
   }
 ]
